@@ -10,7 +10,7 @@
   "userland-proxy": false,
   "no-new-privileges": true,
   "selinux-enabled": true,
-  "userns-remap": "default",
+  "user's-remap": "default",
   "log-level": "info",
   "log-driver": "json-file",
   "log-opts": {
