@@ -1,0 +1,13 @@
+{
+  "data-root": "/data/docker",
+  "registry-mirrors": [
+    "https://dp.4r3al.team"
+  ],
+  "bip": "172.18.1.1/24",
+  "insecure-registries": ["192.168.50.90:3380"],
+  "log-opts": {
+    "max-size": "2g",
+    "max-file": "3"
+  },
+  "exec-opts": ["native.cgroupdriver=systemd"]
+}
