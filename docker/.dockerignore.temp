@@ -1,0 +1,12 @@
+# Git & CI
+.git
+.gitignore
+.gitlab-ci.yml
+.github
+
+# IDES
+.idea/
+.vscode/
+
+# Python
+__pycache__
