@@ -1,0 +1,19 @@
+services:
+  mysql:
+    image: docker.1ms.run/mysql:8.0.45
+    container_name: mysql
+    restart: unless-stopped
+    volumes:
+      - "./dataL/var/lib/mysql"
+    # ports:
+    #   - "3306:3306"
+    network_mode: host
+    environment:
+      - MYSQL_DATABASE=${DB_NAME}
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-p  ${DB_ROOT_PASSWORD}"]
+      retries: 3
+      timeout: 5s
