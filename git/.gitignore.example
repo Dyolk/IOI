@@ -1,3 +1,15 @@
 # IDEs
+
 .idea/
 .vscode/
+
+# Caches
+
+## 4 Node.JS
+
+node_modules/
+**/node_modules/
+.*/node_modules/
+**/.*/node_modules/
+
+## 4 Python
